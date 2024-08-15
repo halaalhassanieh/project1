@@ -25,7 +25,7 @@ const Login = () => {
 
     function handleSignIn(e){
 
-        axios.post('url',{
+        axios.post('https://b4ab-185-107-56-71.ngrok-free.app/api/user/auth/loginAsAdmin',{
             email:email,
             password:password,
         }).then((res)=>{

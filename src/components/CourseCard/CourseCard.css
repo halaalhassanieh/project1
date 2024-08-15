@@ -1,11 +1,19 @@
 .cards {
     border-radius: 20px;
     border: 1px solid #d18cea;
-    background-color: #efc7e408;
-    border-left: #ed7bcd 10px solid;
-    /* border-right     : #ed7bcd 10px solid; */
+    background-color: #efc7e403;
+    border-left: #ed7bcd 8px solid;
+    border-right     : #ed7bcd 8px solid;
+    
 }
-
+.course-photo{
+    width: 100%;
+    border-radius: 10px;
+}
+.cards h5{
+    font-weight: bold;
+    
+}
 .subject {
     color: darkmagenta;
     font-weight: bold;
@@ -22,10 +30,10 @@
     background-color: white;
     color: black;
     font-weight: 600;
-    font-size: 13px;
-    padding: 5px 15px 5px 15px;
+    font-size: 10px;
+    padding: 1px 10px;
     margin-left: 13px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.7px;
     cursor: pointer !important;
 }
 

@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import AddCourseCard from './AddCourseCard';
 import axios from 'axios';
 
+import girl from '../../assets/about/girl.png'
 
 
 
@@ -10,6 +11,8 @@ const AddCourse = () => {
         const [AddCourseData,setAddCourseData] =useState([
             // {
             //     id:1,
+            //     photo: girl,
+            //     price:'1000',
             //     subject: "maths",
             //     teacher: "samer",
             //     details: "Lorem ipsum dolor sit amet consectetur.",
@@ -99,8 +102,8 @@ const AddCourse = () => {
                             <div className='explore '> Waiting to Approve</div>
                         </div> 
                         <div style={{ height: '65vh', overflow: 'scroll' }} className=' mt-3 d-flex flex-wrap justify-content-center' >
-{/*                             
-                            {
+                            
+                            {/* {
                                 AddCourseData.map((e, i) => {
                                     return (
                                         
@@ -110,7 +113,7 @@ const AddCourse = () => {
                                             } handleAdd={()=>{
                                             Add(e.id)
                                             }} 
-                                            key={i} subject={e.subject} teacher={e.teacher} details={e.details}  />
+                                            key={i} photo={e.photo} price={e.price} subject={e.subject} teacher={e.teacher} details={e.details}  />
                                         
                                     )
                                 })

@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import wavyLine from '../../assets/svg.png'
 import { SiSearxng } from "react-icons/si";
 import { useState } from 'react';
+import axios from 'axios';
 
 
 
@@ -42,9 +43,9 @@ const NavBar = () => {
 
       function handleSignOut(){
         
-            axios.post('url/logout').then((res)=>{ // Assuming your API has an endpoint for logging out
-            localStorage.removeItem('token');
-            navigate2('/'); }) 
+        localStorage.removeItem(data.token)
+            navigate2('/');
+            
         
       };
 
